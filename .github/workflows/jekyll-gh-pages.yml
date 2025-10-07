@@ -22,9 +22,15 @@ jobs:
         with:
           node-version: 22 
 
+     
       - name: Vite GitHub Pages Deployer
-        run:  |
-            git config --global user.email "aachauhan98@gmail.com"
-            git config --global user.name "Archana8360"
-            npm install
-            npm run deploy
+        uses: skywarth/vite-github-pages-deployer@v1.5.0
+        with:
+          public_base_path: /  # This is the base
+          build_path: ./dist
+          install_phase_node_env: dev
+          build_phase_node_env: production
+          package_manager: npm
+          artifact_name: github-pages
+          debug_mode: false
+          working_path: ./
