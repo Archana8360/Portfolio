@@ -21,7 +21,7 @@
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": false,
 
-    "baseUrl": ".",
+    "baseUrl": "https://archana8360.github.io",
     "paths": {
       "@/*": ["./src/*"]
     }
