@@ -24,5 +24,7 @@ jobs:
 
       - name: Vite GitHub Pages Deployer
         run:  |
+            git config --global user.email "aachauhan98@gmail.com"
+            git config --global user.name "Archana8360"
             npm install
             npm run deploy
