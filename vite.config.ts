@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: 'https://archana8360.github.io/Portfolio/',
+  base: '/Portfolio/',
 }));
